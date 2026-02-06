@@ -1,0 +1,19 @@
+:root {
+  /* 🌿 Nursery Brand Colors - Light Mode */
+  --bg-color: #FFF8E1;        /* Soft Cream background */
+  --text-color: #2E7D32;      /* Dark Green text */
+  --nav-bg: #4CAF50;           /* Leaf Green navbar */
+  --link-color: #4CAF50;       /* Leaf Green links */
+  --accent-color: #FFEB3B;     /* Accent Yellow */
+  --secondary-color: #8D6E63;  /* Earth Brown for cards/sections */
+}
+
+body.dark {
+  /* 🌙 Dark Mode Colors */
+  --bg-color: #2E7D32;         /* Dark Green background */
+  --text-color: #FFF8E1;       /* Soft Cream text */
+  --nav-bg: #1B5E20;           /* Darker Leaf Green navbar */
+  --link-color: #81C784;       /* Light Green links */
+  --accent-color: #FFEB3B;     /* Accent Yellow stays */
+  --secondary-color: #A1887F;  /* Darker Earth Brown */
+}

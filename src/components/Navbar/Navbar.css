@@ -1,0 +1,141 @@
+/* Navbar.css */
+
+/* Header & Navbar */
+.header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--nav-bg);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.navbar {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 2rem; /* slightly reduced for better balance */
+  position: relative;
+}
+
+/* ================= LOGO ================= */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: bold;
+  font-size: 1.15rem;
+  color: var(--text-color);
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  border-radius: 8px;
+  background-color: #f1f8e9; /* makes logo pop */
+  padding: 4px;
+}
+
+.logo span {
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* ================= NAV LINKS ================= */
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.nav-links li a {
+  font-weight: 500;
+  color: var(--text-color);
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: var(--link-color);
+}
+
+/* ================= THEME BUTTON ================= */
+.theme-btn {
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.theme-btn:hover {
+  opacity: 0.9;
+}
+
+/* ================= MOBILE MENU TOGGLE ================= */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-color);
+}
+
+/* ================= DARK MODE FIX ================= */
+body.dark .navbar {
+  background-color: #1e1e1e;
+}
+
+body.dark .logo span {
+  color: #a5d6a7;
+}
+
+body.dark .logo img {
+  background-color: #2e2e2e;
+}
+
+/* ================= MOBILE RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .logo img {
+    width: 42px;
+    height: 42px;
+  }
+
+  .logo span {
+    font-size: 1rem;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--nav-bg);
+    flex-direction: column;
+    display: none;
+    padding: 1rem 0;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 0.5rem 0;
+    text-align: center;
+  }
+
+  .theme-btn {
+    margin-top: 0.5rem;
+  }
+}

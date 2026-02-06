@@ -1,0 +1,59 @@
+/* App.css for Shree Ganesh HiTech Nursery */
+
+.App {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: calc(14px + 0.5vmin);
+  padding-top: 2rem;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+.App-logo {
+  height: 80px; /* Adjust logo size */
+  margin-bottom: 1rem;
+}
+
+.App-header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1rem 2rem;
+  background-color: var(--nav-bg);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  color: var(--text-color);
+}
+
+.App-link {
+  color: var(--link-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.App-link:hover {
+  color: var(--btn-bg);
+}
+
+/* Optional animations for sections */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s ease forwards;
+}

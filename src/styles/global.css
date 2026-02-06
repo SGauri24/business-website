@@ -1,0 +1,29 @@
+/* 🌍 Global reset */
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+
+  /* ✅ Animate ONLY colors (safe) */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* 🔗 Links */
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+/* 🔒 Stable page layout (CRITICAL for Lighthouse) */
+.app-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 🧠 Main content grows, footer stays bottom */
+.main-content {
+  flex: 1;
+  width: 100%;
+}
